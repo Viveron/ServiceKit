@@ -10,6 +10,16 @@
 		0C6305A0211282B100277963 /* ServiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C630596211282B100277963 /* ServiceKit.framework */; };
 		0C6305A5211282B100277963 /* ServiceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305A4211282B100277963 /* ServiceKitTests.swift */; };
 		0C6305A7211282B100277963 /* ServiceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C630599211282B100277963 /* ServiceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C6305B821128A8B00277963 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305B721128A8B00277963 /* StoreService.swift */; };
+		0C6305BA21128B1C00277963 /* ProductPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305B921128B1C00277963 /* ProductPack.swift */; };
+		0C6305BC21128F8E00277963 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305BB21128F8E00277963 /* Receipt.swift */; };
+		0C6305BE2113C17200277963 /* StoreServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305BD2113C17200277963 /* StoreServiceImpl.swift */; };
+		0C6305C12118E40A00277963 /* ProductPackDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305C02118E40A00277963 /* ProductPackDescription.swift */; };
+		0C6305CA211A57C000277963 /* ProductsRequestDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305C9211A57C000277963 /* ProductsRequestDelegateProxy.swift */; };
+		0C6305CC211A585A00277963 /* PaymentTransactionObserverProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305CB211A585A00277963 /* PaymentTransactionObserverProxy.swift */; };
+		0C6305CE211A5D1E00277963 /* StoreServiceImpl+PacksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305CD211A5D1E00277963 /* StoreServiceImpl+PacksRequest.swift */; };
+		0C6305D0211A60A700277963 /* StoreServiceImpl+BuyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305CF211A60A700277963 /* StoreServiceImpl+BuyRequest.swift */; };
+		0C6305D3211A698700277963 /* StoreServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305D2211A698700277963 /* StoreServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,16 @@
 		0C63059F211282B100277963 /* ServiceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6305A4211282B100277963 /* ServiceKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceKitTests.swift; sourceTree = "<group>"; };
 		0C6305A6211282B100277963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6305B721128A8B00277963 /* StoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
+		0C6305B921128B1C00277963 /* ProductPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPack.swift; sourceTree = "<group>"; };
+		0C6305BB21128F8E00277963 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		0C6305BD2113C17200277963 /* StoreServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreServiceImpl.swift; sourceTree = "<group>"; };
+		0C6305C02118E40A00277963 /* ProductPackDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPackDescription.swift; sourceTree = "<group>"; };
+		0C6305C9211A57C000277963 /* ProductsRequestDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRequestDelegateProxy.swift; sourceTree = "<group>"; };
+		0C6305CB211A585A00277963 /* PaymentTransactionObserverProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTransactionObserverProxy.swift; sourceTree = "<group>"; };
+		0C6305CD211A5D1E00277963 /* StoreServiceImpl+PacksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreServiceImpl+PacksRequest.swift"; sourceTree = "<group>"; };
+		0C6305CF211A60A700277963 /* StoreServiceImpl+BuyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreServiceImpl+BuyRequest.swift"; sourceTree = "<group>"; };
+		0C6305D2211A698700277963 /* StoreServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +126,66 @@
 		0C6305B4211283C800277963 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0C6305B621128A6B00277963 /* StoreService */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		0C6305B621128A6B00277963 /* StoreService */ = {
+			isa = PBXGroup;
+			children = (
+				0C6305D1211A696500277963 /* Error */,
+				0C6305C32118E5A300277963 /* Service */,
+				0C6305C42118E5AF00277963 /* Receipt */,
+				0C6305C22118E58D00277963 /* ProductPack */,
+				0C6305B721128A8B00277963 /* StoreService.swift */,
+			);
+			path = StoreService;
+			sourceTree = "<group>";
+		};
+		0C6305C22118E58D00277963 /* ProductPack */ = {
+			isa = PBXGroup;
+			children = (
+				0C6305B921128B1C00277963 /* ProductPack.swift */,
+				0C6305C02118E40A00277963 /* ProductPackDescription.swift */,
+			);
+			path = ProductPack;
+			sourceTree = "<group>";
+		};
+		0C6305C32118E5A300277963 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0C6305BD2113C17200277963 /* StoreServiceImpl.swift */,
+				0C6305CF211A60A700277963 /* StoreServiceImpl+BuyRequest.swift */,
+				0C6305CD211A5D1E00277963 /* StoreServiceImpl+PacksRequest.swift */,
+				0C6305C8211A56FD00277963 /* Proxies */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0C6305C42118E5AF00277963 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				0C6305BB21128F8E00277963 /* Receipt.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		0C6305C8211A56FD00277963 /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				0C6305C9211A57C000277963 /* ProductsRequestDelegateProxy.swift */,
+				0C6305CB211A585A00277963 /* PaymentTransactionObserverProxy.swift */,
+			);
+			path = Proxies;
+			sourceTree = "<group>";
+		};
+		0C6305D1211A696500277963 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				0C6305D2211A698700277963 /* StoreServiceError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +250,7 @@
 				TargetAttributes = {
 					0C630595211282B100277963 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					0C63059E211282B100277963 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -218,6 +297,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C6305BC21128F8E00277963 /* Receipt.swift in Sources */,
+				0C6305BE2113C17200277963 /* StoreServiceImpl.swift in Sources */,
+				0C6305C12118E40A00277963 /* ProductPackDescription.swift in Sources */,
+				0C6305D0211A60A700277963 /* StoreServiceImpl+BuyRequest.swift in Sources */,
+				0C6305D3211A698700277963 /* StoreServiceError.swift in Sources */,
+				0C6305CE211A5D1E00277963 /* StoreServiceImpl+PacksRequest.swift in Sources */,
+				0C6305BA21128B1C00277963 /* ProductPack.swift in Sources */,
+				0C6305CA211A57C000277963 /* ProductsRequestDelegateProxy.swift in Sources */,
+				0C6305CC211A585A00277963 /* PaymentTransactionObserverProxy.swift in Sources */,
+				0C6305B821128A8B00277963 /* StoreService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +452,7 @@
 		0C6305AB211282B100277963 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -380,6 +470,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vshabanov.ServiceKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,6 +479,7 @@
 		0C6305AC211282B100277963 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -413,6 +505,7 @@
 		0C6305AE211282B100277963 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5GGNVP9C6;
 				INFOPLIST_FILE = ServiceKitTests/Info.plist;
@@ -431,6 +524,7 @@
 		0C6305AF211282B100277963 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V5GGNVP9C6;
 				INFOPLIST_FILE = ServiceKitTests/Info.plist;
