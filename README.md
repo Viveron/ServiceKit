@@ -1,6 +1,7 @@
 # ServiceKit
 
 ![Version](https://img.shields.io/github/tag/Viveron/ServiceKit.svg?label=pod&logoColor=orange)
+[![Source](https://img.shields.io/badge/source-private-red.svg)](https://github.com/Viveron/Podspecs)
 ![License](https://img.shields.io/github/license/Viveron/ServiceKit.svg?colorB=424242)
 ![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)
 
