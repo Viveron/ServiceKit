@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol StoreService: class {
+public protocol StoreService: class {
     associatedtype Pack: ProductPack
     
     typealias BuyRequestResult = (_ success: Bool, _ receipt: Receipt?) -> Void

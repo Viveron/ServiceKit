@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ProductPackDescription: Codable {
+public struct ProductPackDescription: Codable {
     
     let productIdentifier: String
     let count: UInt

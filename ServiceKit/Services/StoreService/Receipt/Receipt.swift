@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Receipt: Codable {
+public struct Receipt: Codable {
     
     let productIdentifier: String
     let content: String

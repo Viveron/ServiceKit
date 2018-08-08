@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal extension StoreServiceImpl {
+extension StoreServiceImpl {
     
     struct BuyRequest {
         

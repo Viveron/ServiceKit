@@ -19,6 +19,7 @@ class PaymentTransactionObserverProxy: NSObject, SKPaymentTransactionObserver {
     weak var observer: PaymentTransactionObserver?
     
     init(_ observer: PaymentTransactionObserver? = nil) {
+        super.init()
         self.observer = observer
     }
     

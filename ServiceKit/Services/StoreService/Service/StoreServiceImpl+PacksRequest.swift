@@ -9,7 +9,7 @@
 import Foundation
 import StoreKit
 
-internal extension StoreServiceImpl {
+extension StoreServiceImpl {
     
     struct PacksRequest {
         

@@ -9,7 +9,7 @@
 import Foundation
 import StoreKit
 
-protocol ProductPack {
+public protocol ProductPack {
 
     var product: SKProduct { get }
     var count: UInt { get }

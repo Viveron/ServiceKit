@@ -9,7 +9,7 @@
 import Foundation
 import StoreKit
 
-class StoreServiceImpl<Pack: ProductPack>: StoreService {
+open class StoreServiceImpl<Pack: ProductPack>: StoreService {
     
     private var buyLock: NSLock!
     private var buyRequests: [String: BuyRequest]!
@@ -20,7 +20,7 @@ class StoreServiceImpl<Pack: ProductPack>: StoreService {
     private var proxyObserver: PaymentTransactionObserverProxy!
     private var proxyDelegate: ProductsRequestDelegateProxy!
     
-    var canBuy: Bool {
+    public var canBuy: Bool {
         return SKPaymentQueue.canMakePayments()
     }
     
@@ -37,7 +37,7 @@ class StoreServiceImpl<Pack: ProductPack>: StoreService {
         SKPaymentQueue.default().add(proxyObserver)
     }
     
-    func buy(pack: Pack, _ completion: @escaping BuyRequestResult) throws {
+    public func buy(pack: Pack, _ completion: @escaping BuyRequestResult) throws {
         buyLock.lock()
         defer {
             buyLock.unlock()
@@ -56,7 +56,7 @@ class StoreServiceImpl<Pack: ProductPack>: StoreService {
     }
     
     @discardableResult
-    func requestPacks(with descriptions: [ProductPackDescription],
+    public func requestPacks(with descriptions: [ProductPackDescription],
                       _ completion: @escaping PacksRequestResult) -> Int? {
         packsLock.lock()
         defer {
@@ -76,7 +76,7 @@ class StoreServiceImpl<Pack: ProductPack>: StoreService {
         return identifier
     }
     
-    func cancelRequest(by identifier: Int) {
+    public func cancelRequest(by identifier: Int) {
         packsLock.lock()
         defer {
             packsLock.unlock()
