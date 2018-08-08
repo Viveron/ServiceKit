@@ -1,8 +1,8 @@
 # ServiceKit
 
-[![Version](https://img.shields.io/cocoapods/v/ServiceKit.svg?style=flat)](https://github.com/Viveron/Podspecs/ServiceKit)
-[![License](https://img.shields.io/cocoapods/l/ServiceKit.svg?style=flat)](https://github.com/Viveron/Podspecs/ServiceKit)
-[![Platform](https://img.shields.io/cocoapods/p/ServiceKit.svg?style=flat)](https://github.com/Viveron/Podspecs/ServiceKit)
+![Version](https://img.shields.io/github/tag/Viveron/ServiceKit.svg?label=pod&logoColor=orange)
+![License](https://img.shields.io/github/license/Viveron/ServiceKit.svg?colorB=424242)
+![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)
 
 Набор сервисов и сервисных компонентов, направленных на быструю разработку слоя бизнесс логики приложения с использованием принципов сервис-ориентированной архитектуры
 
