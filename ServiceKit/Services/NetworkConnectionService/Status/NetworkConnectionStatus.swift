@@ -12,14 +12,14 @@ public enum NetworkConnectionStatus: Equatable {
     case disconnected
     case connected(NetworkConnectionType)
     
-    var isConnected: Bool {
+    public var isConnected: Bool {
         if case .connected = self {
             return true
         }
         return false
     }
     
-    func isConnected(by: NetworkConnectionType) -> Bool {
+    public func isConnected(by: NetworkConnectionType) -> Bool {
         if case let .connected(type) = self {
             return by == type
         }
