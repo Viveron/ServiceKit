@@ -10,10 +10,10 @@ import Foundation
 
 public struct Receipt: Codable {
     
-    let productIdentifier: String
-    let content: String
+    public let productIdentifier: String
+    public let content: String
     
-    init(_ productIdentifier: String, _ content: String) {
+    public init(_ productIdentifier: String, _ content: String) {
         self.productIdentifier = productIdentifier
         self.content = content
     }

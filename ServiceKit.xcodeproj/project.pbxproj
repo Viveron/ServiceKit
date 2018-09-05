@@ -20,6 +20,10 @@
 		0C6305CE211A5D1E00277963 /* StoreServiceImpl+PacksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305CD211A5D1E00277963 /* StoreServiceImpl+PacksRequest.swift */; };
 		0C6305D0211A60A700277963 /* StoreServiceImpl+BuyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305CF211A60A700277963 /* StoreServiceImpl+BuyRequest.swift */; };
 		0C6305D3211A698700277963 /* StoreServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6305D2211A698700277963 /* StoreServiceError.swift */; };
+		0C9116D0213F1ED700CDAB39 /* NetworkConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9116CF213F1ED700CDAB39 /* NetworkConnectionService.swift */; };
+		0C9116D4213F225400CDAB39 /* NetworkConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9116D3213F225400CDAB39 /* NetworkConnectionStatus.swift */; };
+		0C9116D7213F27E500CDAB39 /* NetworkConnectionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9116D6213F27E500CDAB39 /* NetworkConnectionObserver.swift */; };
+		0C9116D9213F2DDB00CDAB39 /* NetworkConnectionServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9116D8213F2DDB00CDAB39 /* NetworkConnectionServiceImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		0C6305CD211A5D1E00277963 /* StoreServiceImpl+PacksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreServiceImpl+PacksRequest.swift"; sourceTree = "<group>"; };
 		0C6305CF211A60A700277963 /* StoreServiceImpl+BuyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreServiceImpl+BuyRequest.swift"; sourceTree = "<group>"; };
 		0C6305D2211A698700277963 /* StoreServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreServiceError.swift; sourceTree = "<group>"; };
+		0C9116CF213F1ED700CDAB39 /* NetworkConnectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionService.swift; sourceTree = "<group>"; };
+		0C9116D3213F225400CDAB39 /* NetworkConnectionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionStatus.swift; sourceTree = "<group>"; };
+		0C9116D6213F27E500CDAB39 /* NetworkConnectionObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionObserver.swift; sourceTree = "<group>"; };
+		0C9116D8213F2DDB00CDAB39 /* NetworkConnectionServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionServiceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				0C6305B621128A6B00277963 /* StoreService */,
+				0C9116CE213F1DE800CDAB39 /* NetworkConnectionService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -186,6 +195,41 @@
 				0C6305D2211A698700277963 /* StoreServiceError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		0C9116CE213F1DE800CDAB39 /* NetworkConnectionService */ = {
+			isa = PBXGroup;
+			children = (
+				0C9116D2213F220F00CDAB39 /* Status */,
+				0C9116D5213F279F00CDAB39 /* Observer */,
+				0C9116D1213F1F1C00CDAB39 /* Service */,
+				0C9116CF213F1ED700CDAB39 /* NetworkConnectionService.swift */,
+			);
+			path = NetworkConnectionService;
+			sourceTree = "<group>";
+		};
+		0C9116D1213F1F1C00CDAB39 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0C9116D8213F2DDB00CDAB39 /* NetworkConnectionServiceImpl.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0C9116D2213F220F00CDAB39 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				0C9116D3213F225400CDAB39 /* NetworkConnectionStatus.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		0C9116D5213F279F00CDAB39 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				0C9116D6213F27E500CDAB39 /* NetworkConnectionObserver.swift */,
+			);
+			path = Observer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +343,11 @@
 			files = (
 				0C6305BC21128F8E00277963 /* Receipt.swift in Sources */,
 				0C6305BE2113C17200277963 /* StoreServiceImpl.swift in Sources */,
+				0C9116D7213F27E500CDAB39 /* NetworkConnectionObserver.swift in Sources */,
+				0C9116D4213F225400CDAB39 /* NetworkConnectionStatus.swift in Sources */,
+				0C9116D9213F2DDB00CDAB39 /* NetworkConnectionServiceImpl.swift in Sources */,
 				0C6305C12118E40A00277963 /* ProductPackDescription.swift in Sources */,
+				0C9116D0213F1ED700CDAB39 /* NetworkConnectionService.swift in Sources */,
 				0C6305D0211A60A700277963 /* StoreServiceImpl+BuyRequest.swift in Sources */,
 				0C6305D3211A698700277963 /* StoreServiceError.swift in Sources */,
 				0C6305CE211A5D1E00277963 /* StoreServiceImpl+PacksRequest.swift in Sources */,

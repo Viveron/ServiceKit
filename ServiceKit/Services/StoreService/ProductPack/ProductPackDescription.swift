@@ -10,10 +10,10 @@ import Foundation
 
 public struct ProductPackDescription: Codable {
     
-    let productIdentifier: String
-    let count: UInt
+    public let productIdentifier: String
+    public let count: UInt
     
-    init(_ productIdentifier: String, _ count: UInt) {
+    public init(_ productIdentifier: String, _ count: UInt) {
         self.productIdentifier = productIdentifier
         self.count = count
     }

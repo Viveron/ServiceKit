@@ -24,7 +24,7 @@ open class StoreServiceImpl<Pack: ProductPack>: StoreService {
         return SKPaymentQueue.canMakePayments()
     }
     
-    init() {
+    public init() {
         buyLock = NSLock()
         buyRequests = [:]
         

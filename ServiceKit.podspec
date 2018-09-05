@@ -1,12 +1,13 @@
 Pod::Spec.new do |s|
     s.name    = 'ServiceKit'
-    s.version = '0.1.0'
+    s.version = '0.2.0'
     s.summary = 'SOA Services Kit for iOS development.'
 
     # MUST add all new service to kit' SOA list 
     s.description = <<-DESC
 Collection of SOA Services:
 - StoreService
+- NetworkConnectionService (Reachability)
     DESC
     
     s.homepage = 'https://github.com/Viveron/ServiceKit'
@@ -21,5 +22,11 @@ Collection of SOA Services:
         ss.source_files        = 'ServiceKit/Services/StoreService/**/*'
         ss.header_mappings_dir = 'ServiceKit/Services/StoreService'
         ss.frameworks          = 'StoreKit'
+    end
+
+    s.subspec 'NetworkConnectionService' do |ncs|
+        ncs.source_files        = 'ServiceKit/Services/NetworkConnectionService/**/*'
+        ncs.header_mappings_dir = 'ServiceKit/Services/NetworkConnectionService'
+        ncs.frameworks          = 'SystemConfiguration'
     end
 end
