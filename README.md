@@ -12,7 +12,7 @@
 Список доступных на текущий момент сервисов:
 
 [StoreService](https://github.com/Viveron/ServiceKit/wiki/StoreService) - Взаимодействие с In-App Purchase сервисом и осуществление покупок в приложении
-
+[NetworkConnectionService](https://github.com/Viveron/ServiceKit/wiki/NetworkConnectionService) - Мониторинг интерент соединения (Reachability)
 
 ## Автор
 
