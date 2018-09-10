@@ -9,7 +9,7 @@
 import Foundation
 
 public enum StoreServiceError: Error {
-    
+
     /// Purchase operation of specified product til in process
     case purchaseTransactionInProgress
 }

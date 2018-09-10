@@ -11,17 +11,17 @@ import Foundation
 public enum NetworkConnectionStatus: Equatable {
     case disconnected
     case connected(NetworkConnectionType)
-    
+
     public var isConnected: Bool {
         if case .connected = self {
             return true
         }
         return false
     }
-    
-    public func isConnected(by: NetworkConnectionType) -> Bool {
+
+    public func isConnected(with: NetworkConnectionType) -> Bool {
         if case let .connected(type) = self {
-            return by == type
+            return with == type
         }
         return false
     }

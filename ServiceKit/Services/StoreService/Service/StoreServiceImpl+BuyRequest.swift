@@ -9,15 +9,15 @@
 import Foundation
 
 extension StoreServiceImpl {
-    
+
     struct BuyRequest {
-        
+
         let productIdentifier: String
         let completion: BuyRequestResult
-        
+
         init(_ productIdentifier: String,
              _ completion: @escaping BuyRequestResult) {
-            
+
             self.productIdentifier = productIdentifier
             self.completion = completion
         }

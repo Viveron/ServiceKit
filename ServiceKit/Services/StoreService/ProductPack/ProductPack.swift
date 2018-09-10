@@ -13,6 +13,6 @@ public protocol ProductPack {
 
     var product: SKProduct { get }
     var count: UInt { get }
-    
+
     init(_ product: SKProduct, _ count: UInt)
 }

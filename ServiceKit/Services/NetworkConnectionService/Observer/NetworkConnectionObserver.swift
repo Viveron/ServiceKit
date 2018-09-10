@@ -9,10 +9,10 @@
 import Foundation
 
 open class NetworkConnectionObserver: NSObject {
-    
+
     internal let queue: DispatchQueue
     internal let update: (_ status: NetworkConnectionStatus?) -> Void
-    
+
     internal init(_ queue: DispatchQueue?,
                   _ closure: @escaping (_ status: NetworkConnectionStatus?) -> Void) {
         self.update = closure

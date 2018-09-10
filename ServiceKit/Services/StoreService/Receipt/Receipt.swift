@@ -9,10 +9,10 @@
 import Foundation
 
 public struct Receipt: Codable {
-    
+
     public let productIdentifier: String
     public let content: String
-    
+
     public init(_ productIdentifier: String, _ content: String) {
         self.productIdentifier = productIdentifier
         self.content = content

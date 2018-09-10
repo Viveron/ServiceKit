@@ -10,21 +10,21 @@ import Foundation
 import StoreKit
 
 protocol PaymentTransactionObserver: class {
-    
+
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction])
 }
 
 class PaymentTransactionObserverProxy: NSObject, SKPaymentTransactionObserver {
-    
+
     weak var observer: PaymentTransactionObserver?
-    
+
     init(_ observer: PaymentTransactionObserver? = nil) {
         super.init()
         self.observer = observer
     }
-    
+
     // MARK: - SKPaymentTransactionObserver
-    
+
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         observer?.paymentQueue(queue, updatedTransactions: transactions)
     }
